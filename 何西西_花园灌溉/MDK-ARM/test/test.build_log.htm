@@ -1,0 +1,85 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.22.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Yang HP, Hewlett-Packard, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.22
+Toolchain Path:  E:\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.22
+Dialog DLL:      DCM.DLL V1.13.9.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.21.0.0
+ 
+<h2>Project:</h2>
+C:\Users\25814\Documents\test\MDK-ARM\test.uvprojx
+Project File Date:  01/07/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'E:\ARM\ARMCC\Bin'
+Build target 'test'
+compiling main.c...
+../Src/main.c(199): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  					sprintf(buf,"0000\n");
+../Src/main.c(230): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(
+PIOB,
+PIO_PIN_6,1);//LED亮
+../Src/main.c(233): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(
+PIOB,
+PIO_PIN_6,0);//LED灭
+../Src/main.c(235): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  			sprintf(buf,"%2d%2d%3.1f%d%4d%2d%2d\n",(int)DHT11_Data.humidity,(int)DHT11_Data.temperature,ADC_Value,isAutoMode,(int)light,min_humi,max_humi);
+../Src/main.c(115): warning:  #177-D: variable "ADC_value"  was declared but never referenced
+  	uint8_t ADC_value = 0;
+../Src/main.c(116): warning:  #177-D: variable "i"  was declared but never referenced
+  	uint8_t i;
+../Src/main.c(117): warning:  #177-D: variable "ad1"  was declared but never referenced
+  	uint32_t ad1,ad2;
+../Src/main.c(117): warning:  #177-D: variable "ad2"  was declared but never referenced
+  	uint32_t ad1,ad2;
+../Src/main.c(309): warning:  #223-D: function "memset" declared implicitly
+  			memset(aRxBuffer2,0,64);
+../Src/main.c(317): warning:  #223-D: function "strstr" declared implicitly
+  				if(strstr(aRxBuffer2,"CONNECT")){
+../Src/main.c(327): warning:  #223-D: function "memset" declared implicitly
+  				memset(aRxBuffer2,0,64);
+../Src/main.c(339): warning:  #223-D: function "memset" declared implicitly
+  					memset(aRxBuffer2,0,64);
+../Src/main.c(331): warning:  #177-D: variable "res"  was declared but never referenced
+  					uint8_t res[4]={0};//用于判断是否写入
+../Src/main.c: 13 warnings, 0 errors
+linking...
+Program Size: Code=14788 RO-data=456 RW-data=48 ZI-data=16856  
+FromELF: creating hex file...
+"test\test.axf" - 0 Error(s), 13 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.0.0.pack
+                ARM::CMSIS:CORE:5.0.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.0
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\25814\Documents\test\MDK-ARM\RTE\_test
+  E:\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.0
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>

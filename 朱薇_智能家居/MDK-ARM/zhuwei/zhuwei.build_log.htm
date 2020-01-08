@@ -1,0 +1,82 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.22.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Yang HP, Hewlett-Packard, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.22
+Toolchain Path:  E:\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.22
+Dialog DLL:      DCM.DLL V1.13.9.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.21.0.0
+ 
+<h2>Project:</h2>
+C:\Users\25814\Documents\zhuwei\MDK-ARM\zhuwei.uvprojx
+Project File Date:  01/02/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'E:\ARM\ARMCC\Bin'
+Build target 'zhuwei'
+compiling main.c...
+../Src/main.c(153): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(
+PIOC,
+PIO_PIN_5,0);
+../Src/main.c(161): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(
+PIOC,
+PIO_PIN_5,1);
+../Src/main.c(174): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+  		sprintf(str,"%2d%2d%d%4.1f%4d%4d\n",(int)temp_humi.temperature,(int)temp_humi.humidity,fire,ADC_Value,(int)light,gas);
+../Src/main.c(180): warning:  #188-D: enumerated type mixed with another type
+  			HAL_GPIO_WritePin(
+PIOE,
+PIO_PIN_12,0);
+../Src/main.c(182): warning:  #188-D: enumerated type mixed with another type
+  			HAL_GPIO_WritePin(
+PIOE,
+PIO_PIN_12,1);
+../Src/main.c(185): warning:  #188-D: enumerated type mixed with another type
+  			HAL_GPIO_WritePin(
+PIOE,
+PIO_PIN_13,0);
+../Src/main.c(187): warning:  #188-D: enumerated type mixed with another type
+  			HAL_GPIO_WritePin(
+PIOE,
+PIO_PIN_13,1);
+../Src/main.c: 7 warnings, 0 errors
+linking...
+Program Size: Code=15056 RO-data=360 RW-data=32 ZI-data=1552  
+FromELF: creating hex file...
+"zhuwei\zhuwei.axf" - 0 Error(s), 7 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.0.0.pack
+                ARM::CMSIS:CORE:5.0.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.0
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\25814\Documents\zhuwei\MDK-ARM\RTE\_zhuwei
+  E:\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include
+  E:\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.0
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

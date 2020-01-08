@@ -1,0 +1,411 @@
+###############################################################################
+#                                                                             #
+# IAR C/C++ Compiler V8.10.1.10194/W32 for 8051         30/Dec/2019  21:40:51 #
+# Copyright 2004-2011 IAR Systems AB.                                         #
+#                                                                             #
+#    Core               =  plain                                              #
+#    Code model         =  banked                                             #
+#    Data model         =  large                                              #
+#    Calling convention =  xdata reentrant                                    #
+#    Constant location  =  data_rom                                           #
+#    Dptr setup         =  1,16                                               #
+#    Source file        =  C:\Users\25814\Desktop\2020±ÏÉè\ÕÅãÆ»Û×Ó_Ä¾²Ä¼à²â\ #
+#                          Ó²¼þ²¿·Ö\Projects\zstack\Samples\SampleApp\Source\ #
+#                          IC.c                                               #
+#    Command line       =  -f C:\Users\25814\Desktop\2020±ÏÉè\ÕÅãÆ»Û×Ó_Ä¾²Ä¼à #
+#                          ²â\Ó²¼þ²¿·Ö\Projects\zstack\Samples\SampleApp\CC25 #
+#                          30DB\..\..\..\Tools\CC2530DB\f8wEndev.cfg          #
+#                          (-DCPU32MHZ -DROOT=__near_func                     #
+#                          -DMAC_CFG_TX_DATA_MAX=3 -DMAC_CFG_TX_MAX=6         #
+#                          -DMAC_CFG_RX_MAX=3) -f C:\Users\25814\Desktop\2020 #
+#                          ±ÏÉè\ÕÅãÆ»Û×Ó_Ä¾²Ä¼à²â\Ó²¼þ²¿·Ö\Projects\zstack\Sa #
+#                          mples\SampleApp\CC2530DB\..\..\..\Tools\CC2530DB\f #
+#                          8wConfig.cfg (-DZIGBEEPRO -DSECURE=0               #
+#                          -DZG_SECURE_DYNAMIC=0 -DREFLECTOR                  #
+#                          -DDEFAULT_CHANLIST=0x00000800                      #
+#                          -DZDAPP_CONFIG_PAN_ID=0xFFF1                       #
+#                          -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_MA #
+#                          SK=0x007F -DBEACON_REQUEST_DELAY=100               #
+#                          -DBEACON_REQ_DELAY_MASK=0x00FF                     #
+#                          -DLINK_STATUS_JITTER_MASK=0x007F                   #
+#                          -DROUTE_EXPIRY_TIME=30 -DAPSC_ACK_WAIT_DURATION_PO #
+#                          LLED=3000 -DNWK_INDIRECT_MSG_TIMEOUT=7             #
+#                          -DMAX_RREQ_ENTRIES=8 -DAPSC_MAX_FRAME_RETRIES=3    #
+#                          -DNWK_MAX_DATA_RETRIES=2                           #
+#                          -DMAX_POLL_FAILURE_RETRIES=2 -DMAX_BCAST=9         #
+#                          -DAPS_MAX_GROUPS=16 -DMAX_RTG_ENTRIES=40           #
+#                          -DNWK_MAX_BINDING_ENTRIES=4                        #
+#                          -DMAX_BINDING_CLUSTER_IDS=4 "-DDEFAULT_KEY={0x01,  #
+#                          0x03, 0x05, 0x07, 0x09, 0x0B, 0x0D, 0x0F, 0x00,    #
+#                          0x02, 0x04, 0x06, 0x08, 0x0A, 0x0C, 0x0D}"         #
+#                          -DMAC_MAX_FRAME_SIZE=116                           #
+#                          -DZDNWKMGR_MIN_TRANSMISSIONS=20 "-DCONST=const     #
+#                          __code" -DGENERIC=__generic                        #
+#                          -DRFD_RCVC_ALWAYS_ON=FALSE -DPOLL_RATE=1000        #
+#                          -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100)   #
+#                          -DREJOIN_POLL_RATE=440 C:\Users\25814\Desktop\2020 #
+#                          ±ÏÉè\ÕÅãÆ»Û×Ó_Ä¾²Ä¼à²â\Ó²¼þ²¿·Ö\Projects\zstack\Sa #
+#                          mples\SampleApp\Source\IC.c -D NWK_AUTO_POLL -D    #
+#                          ZAPP_P1 -D MT_TASK -D MT_SYS_FUNC -D MT_ZDO_FUNC   #
+#                          -D LCD_SUPPORTED=DEBUG -lC                         #
+#                          C:\Users\25814\Desktop\2020±ÏÉè\ÕÅãÆ»Û×Ó_Ä¾²Ä¼à²â\ #
+#                          Ó²¼þ²¿·Ö\Projects\zstack\Samples\SampleApp\CC2530D #
+#                          B\EndDeviceEB\List\ -lA C:\Users\25814\Desktop\202 #
+#                          0±ÏÉè\ÕÅãÆ»Û×Ó_Ä¾²Ä¼à²â\Ó²¼þ²¿·Ö\Projects\zstack\S #
+#                          amples\SampleApp\CC2530DB\EndDeviceEB\List\        #
+#                          --diag_suppress Pe001,Pa010 -o                     #
+#                          C:\Users\25814\Desktop\2020±ÏÉè\ÕÅãÆ»Û×Ó_Ä¾²Ä¼à²â\ #
+#                          Ó²¼þ²¿·Ö\Projects\zstack\Samples\SampleApp\CC2530D #
+#                          B\EndDeviceEB\Obj\ -e --no_code_motion --debug     #
+#                          --core=plain --dptr=16,1 --data_model=large        #
+#                          --code_model=banked --calling_convention=xdata_ree #
+#                          ntrant --place_constants=data_rom                  #
+#                          --nr_virtual_regs 16 -I C:\Users\25814\Desktop\202 #
+#                          0±ÏÉè\ÕÅãÆ»Û×Ó_Ä¾²Ä¼à²â\Ó²¼þ²¿·Ö\Projects\zstack\S #
+#                          amples\SampleApp\CC2530DB\ -I                      #
+#                          C:\Users\25814\Desktop\2020±ÏÉè\ÕÅãÆ»Û×Ó_Ä¾²Ä¼à²â\ #
+#                          Ó²¼þ²¿·Ö\Projects\zstack\Samples\SampleApp\CC2530D #
+#                          B\..\Source\ -I C:\Users\25814\Desktop\2020±ÏÉè\ÕÅ #
+#                          ãÆ»Û×Ó_Ä¾²Ä¼à²â\Ó²¼þ²¿·Ö\Projects\zstack\Samples\S #
+#                          ampleApp\CC2530DB\..\..\..\ZMain\TI2530DB\ -I      #
+#                          C:\Users\25814\Desktop\2020±ÏÉè\ÕÅãÆ»Û×Ó_Ä¾²Ä¼à²â\ #
+#                          Ó²¼þ²¿·Ö\Projects\zstack\Samples\SampleApp\CC2530D #
+#                          B\..\..\..\..\..\Components\hal\include\ -I        #
+#                          C:\Users\25814\Desktop\2020±ÏÉè\ÕÅãÆ»Û×Ó_Ä¾²Ä¼à²â\ #
+#                          Ó²¼þ²¿·Ö\Projects\zstack\Samples\SampleApp\CC2530D #
+#                          B\..\..\..\..\..\Components\hal\target\CC2530EB\   #
+#                          -I C:\Users\25814\Desktop\2020±ÏÉè\ÕÅãÆ»Û×Ó_Ä¾²Ä¼à #
+#                          ²â\Ó²¼þ²¿·Ö\Projects\zstack\Samples\SampleApp\CC25 #
+#                          30DB\..\..\..\..\..\Components\mac\include\ -I     #
+#                          C:\Users\25814\Desktop\2020±ÏÉè\ÕÅãÆ»Û×Ó_Ä¾²Ä¼à²â\ #
+#                          Ó²¼þ²¿·Ö\Projects\zstack\Samples\SampleApp\CC2530D #
+#                          B\..\..\..\..\..\Components\mac\high_level\ -I     #
+#                          C:\Users\25814\Desktop\2020±ÏÉè\ÕÅãÆ»Û×Ó_Ä¾²Ä¼à²â\ #
+#                          Ó²¼þ²¿·Ö\Projects\zstack\Samples\SampleApp\CC2530D #
+#                          B\..\..\..\..\..\Components\mac\low_level\srf04\   #
+#                          -I C:\Users\25814\Desktop\2020±ÏÉè\ÕÅãÆ»Û×Ó_Ä¾²Ä¼à #
+#                          ²â\Ó²¼þ²¿·Ö\Projects\zstack\Samples\SampleApp\CC25 #
+#                          30DB\..\..\..\..\..\Components\mac\low_level\srf04 #
+#                          \single_chip\ -I C:\Users\25814\Desktop\2020±ÏÉè\Õ #
+#                          ÅãÆ»Û×Ó_Ä¾²Ä¼à²â\Ó²¼þ²¿·Ö\Projects\zstack\Samples\ #
+#                          SampleApp\CC2530DB\..\..\..\..\..\Components\mt\   #
+#                          -I C:\Users\25814\Desktop\2020±ÏÉè\ÕÅãÆ»Û×Ó_Ä¾²Ä¼à #
+#                          ²â\Ó²¼þ²¿·Ö\Projects\zstack\Samples\SampleApp\CC25 #
+#                          30DB\..\..\..\..\..\Components\osal\include\ -I    #
+#                          C:\Users\25814\Desktop\2020±ÏÉè\ÕÅãÆ»Û×Ó_Ä¾²Ä¼à²â\ #
+#                          Ó²¼þ²¿·Ö\Projects\zstack\Samples\SampleApp\CC2530D #
+#                          B\..\..\..\..\..\Components\services\saddr\ -I     #
+#                          C:\Users\25814\Desktop\2020±ÏÉè\ÕÅãÆ»Û×Ó_Ä¾²Ä¼à²â\ #
+#                          Ó²¼þ²¿·Ö\Projects\zstack\Samples\SampleApp\CC2530D #
+#                          B\..\..\..\..\..\Components\services\sdata\ -I     #
+#                          C:\Users\25814\Desktop\2020±ÏÉè\ÕÅãÆ»Û×Ó_Ä¾²Ä¼à²â\ #
+#                          Ó²¼þ²¿·Ö\Projects\zstack\Samples\SampleApp\CC2530D #
+#                          B\..\..\..\..\..\Components\stack\af\ -I           #
+#                          C:\Users\25814\Desktop\2020±ÏÉè\ÕÅãÆ»Û×Ó_Ä¾²Ä¼à²â\ #
+#                          Ó²¼þ²¿·Ö\Projects\zstack\Samples\SampleApp\CC2530D #
+#                          B\..\..\..\..\..\Components\stack\nwk\ -I          #
+#                          C:\Users\25814\Desktop\2020±ÏÉè\ÕÅãÆ»Û×Ó_Ä¾²Ä¼à²â\ #
+#                          Ó²¼þ²¿·Ö\Projects\zstack\Samples\SampleApp\CC2530D #
+#                          B\..\..\..\..\..\Components\stack\sapi\ -I         #
+#                          C:\Users\25814\Desktop\2020±ÏÉè\ÕÅãÆ»Û×Ó_Ä¾²Ä¼à²â\ #
+#                          Ó²¼þ²¿·Ö\Projects\zstack\Samples\SampleApp\CC2530D #
+#                          B\..\..\..\..\..\Components\stack\sec\ -I          #
+#                          C:\Users\25814\Desktop\2020±ÏÉè\ÕÅãÆ»Û×Ó_Ä¾²Ä¼à²â\ #
+#                          Ó²¼þ²¿·Ö\Projects\zstack\Samples\SampleApp\CC2530D #
+#                          B\..\..\..\..\..\Components\stack\sys\ -I          #
+#                          C:\Users\25814\Desktop\2020±ÏÉè\ÕÅãÆ»Û×Ó_Ä¾²Ä¼à²â\ #
+#                          Ó²¼þ²¿·Ö\Projects\zstack\Samples\SampleApp\CC2530D #
+#                          B\..\..\..\..\..\Components\stack\zdo\ -I          #
+#                          C:\Users\25814\Desktop\2020±ÏÉè\ÕÅãÆ»Û×Ó_Ä¾²Ä¼à²â\ #
+#                          Ó²¼þ²¿·Ö\Projects\zstack\Samples\SampleApp\CC2530D #
+#                          B\..\..\..\..\..\Components\zmac\ -I               #
+#                          C:\Users\25814\Desktop\2020±ÏÉè\ÕÅãÆ»Û×Ó_Ä¾²Ä¼à²â\ #
+#                          Ó²¼þ²¿·Ö\Projects\zstack\Samples\SampleApp\CC2530D #
+#                          B\..\..\..\..\..\Components\zmac\f8w\ -Ohz         #
+#    List file          =  C:\Users\25814\Desktop\2020±ÏÉè\ÕÅãÆ»Û×Ó_Ä¾²Ä¼à²â\ #
+#                          Ó²¼þ²¿·Ö\Projects\zstack\Samples\SampleApp\CC2530D #
+#                          B\EndDeviceEB\List\IC.lst                          #
+#    Object file        =  C:\Users\25814\Desktop\2020±ÏÉè\ÕÅãÆ»Û×Ó_Ä¾²Ä¼à²â\ #
+#                          Ó²¼þ²¿·Ö\Projects\zstack\Samples\SampleApp\CC2530D #
+#                          B\EndDeviceEB\Obj\IC.r51                           #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+C:\Users\25814\Desktop\2020±ÏÉè\ÕÅãÆ»Û×Ó_Ä¾²Ä¼à²â\Ó²¼þ²¿·Ö\Projects\zstack\Samples\SampleApp\Source\IC.c
+      1          #include "variable.h"
+
+   \                                 In  segment SFR_AN, at 0x80
+   \   union <unnamed> volatile __sfr _A_P0
+   \                     _A_P0:
+   \   000000                DS 1
+
+   \                                 In  segment SFR_AN, at 0x8f
+   \   unsigned char volatile __sfr P0INP
+   \                     P0INP:
+   \   000000                DS 1
+
+   \                                 In  segment SFR_AN, at 0xa0
+   \   union <unnamed> volatile __sfr _A_P2
+   \                     _A_P2:
+   \   000000                DS 1
+
+   \                                 In  segment SFR_AN, at 0xf3
+   \   unsigned char volatile __sfr P0SEL
+   \                     P0SEL:
+   \   000000                DS 1
+
+   \                                 In  segment SFR_AN, at 0xf5
+   \   unsigned char volatile __sfr P2SEL
+   \                     P2SEL:
+   \   000000                DS 1
+
+   \                                 In  segment SFR_AN, at 0xf7
+   \   unsigned char volatile __sfr P2INP
+   \                     P2INP:
+   \   000000                DS 1
+
+   \                                 In  segment SFR_AN, at 0xfd
+   \   unsigned char volatile __sfr P0DIR
+   \                     P0DIR:
+   \   000000                DS 1
+
+   \                                 In  segment SFR_AN, at 0xff
+   \   unsigned char volatile __sfr P2DIR
+   \                     P2DIR:
+   \   000000                DS 1
+      2          #include "IC_w_r.h"
+      3          #include "MT_UART.h"
+      4          
+      5          
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+      6          uchar ucTagType[4]={0};
+   \                     ucTagType:
+   \   000000                DS 4
+   \   000004                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+      7          uchar buf[4];
+   \                     buf:
+   \   000000                DS 4
+   \   000004                REQUIRE __INIT_XDATA_Z
+      8          
+      9          void Initial(void);
+     10          uchar IC_Test(void);
+     11          void IC_Init(void);
+     12          
+     13          
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+     14          void Initial(void)
+   \                     Initial:
+     15          {
+   \   000000                ; Saved register size: 0
+   \   000000                ; Auto size: 0
+     16            //IC_SDA P2_0
+     17            P2DIR |= 1<<0;
+   \   000000   43FF01       ORL     0xff,#0x1
+     18            P2INP |= 1<<0;
+   \   000003   43F701       ORL     0xf7,#0x1
+     19            P2SEL &= ~(1<<0);
+   \   000006   53F5FE       ANL     0xf5,#0xfe
+     20            
+     21            // IC_SCK  P0_7
+     22            P0DIR |= 1<<7;
+   \   000009   43FD80       ORL     0xfd,#0x80
+     23            P0INP |= 1<<7;
+   \   00000C   438F80       ORL     0x8f,#0x80
+     24            P0SEL &= ~(1<<7);
+   \   00000F   53F37F       ANL     0xf3,#0x7f
+     25            
+     26            // IC_MOSI P0_6
+     27            P0DIR |= 1<<6;
+   \   000012   43FD40       ORL     0xfd,#0x40
+     28            P0INP |= 1<<6;
+   \   000015   438F40       ORL     0x8f,#0x40
+     29            P0SEL &= ~(1<<6);
+   \   000018   53F3BF       ANL     0xf3,#0xbf
+     30            
+     31            // IC_MISO P0_5
+     32            P0DIR |= 1<<5;
+   \   00001B   43FD20       ORL     0xfd,#0x20
+     33            P0INP |= 1<<5;
+   \   00001E   438F20       ORL     0x8f,#0x20
+     34            P0SEL &= ~(1<<5);  
+   \   000021   53F3DF       ANL     0xf3,#0xdf
+     35          
+     36            // IC_RST P0_4
+     37            P0DIR &= ~(1<<4);
+   \   000024   53FDEF       ANL     0xfd,#0xef
+     38            P0INP &= ~(1<<4);
+   \   000027   538FEF       ANL     0x8f,#0xef
+     39            P0SEL &= ~(1<<4);
+   \   00002A   53F3EF       ANL     0xf3,#0xef
+     40            
+     41            IC_SCK = 1;
+   \   00002D   D287         SETB    0x80.7
+     42            IC_CS = 1;
+   \   00002F   D2A0         SETB    0xa0.0
+     43          }
+   \   000031   02....       LJMP    ?BRET
+   \   000034                REQUIRE P2DIR
+   \   000034                REQUIRE P2INP
+   \   000034                REQUIRE P2SEL
+   \   000034                REQUIRE P0DIR
+   \   000034                REQUIRE P0INP
+   \   000034                REQUIRE P0SEL
+   \   000034                REQUIRE _A_P0
+   \   000034                REQUIRE _A_P2
+     44          
+     45          
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+     46          uchar IC_Test(void)
+   \                     IC_Test:
+     47          {
+   \   000000   C082         PUSH    DPL
+   \   000002   C083         PUSH    DPH
+   \   000004                ; Saved register size: 2
+   \   000004                ; Auto size: 0
+     48            uchar find=0xaa;
+     49            uchar ret;   
+     50            
+     51            ret = PcdRequest(0x52,buf);//Ñ°¿¨
+     52            if(ret != 0x26)
+   \   000004                ; Setup parameters for call to function PcdRequest
+   \   000004   7A..         MOV     R2,#buf & 0xff
+   \   000006   7B..         MOV     R3,#(buf >> 8) & 0xff
+   \   000008   7952         MOV     R1,#0x52
+   \   00000A   12....       LCALL   ??PcdRequest?relay
+   \   00000D   E9           MOV     A,R1
+   \   00000E   6426         XRL     A,#0x26
+   \   000010   600E         JZ      ??IC_Test_0
+     53              ret = PcdRequest(0x52,buf);
+     54            if(ret != 0x26)
+     55              find = 0xaa;
+     56            if((ret == 0x26)&&(find == 0xaa))
+   \   000012                ; Setup parameters for call to function PcdRequest
+   \   000012   7A..         MOV     R2,#buf & 0xff
+   \   000014   7B..         MOV     R3,#(buf >> 8) & 0xff
+   \   000016   7952         MOV     R1,#0x52
+   \   000018   12....       LCALL   ??PcdRequest?relay
+   \   00001B   E9           MOV     A,R1
+   \   00001C   6426         XRL     A,#0x26
+   \   00001E   700B         JNZ     ??IC_Test_1
+     57            {
+     58              if(PcdAnticoll(ucTagType) == 0x26);//·À³å×²
+   \                     ??IC_Test_0:
+   \   000020                ; Setup parameters for call to function PcdAnticoll
+   \   000020   7A..         MOV     R2,#ucTagType & 0xff
+   \   000022   7B..         MOV     R3,#(ucTagType >> 8) & 0xff
+   \   000024   12....       LCALL   ??PcdAnticoll?relay
+     59              {
+     60                // HalUARTWrite(0,ucTagType,4);
+     61                find = 0x00;
+     62                return 1;
+   \   000027   7901         MOV     R1,#0x1
+   \   000029   8002         SJMP    ??IC_Test_2
+     63              }
+     64            }
+     65           
+     66             return 0;
+   \                     ??IC_Test_1:
+   \   00002B   7900         MOV     R1,#0x0
+   \                     ??IC_Test_2:
+   \   00002D                REQUIRE ?Subroutine0
+   \   00002D                ; // Fall through to label ?Subroutine0
+     67          }
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine0:
+   \   000000   D083         POP     DPH
+   \   000002   D082         POP     DPL
+   \   000004   02....       LJMP    ?BRET
+     68          
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+     69          void IC_Init(void)
+   \                     IC_Init:
+     70          {
+   \   000000   C082         PUSH    DPL
+   \   000002   C083         PUSH    DPH
+   \   000004                ; Saved register size: 2
+   \   000004                ; Auto size: 0
+     71            Initial();
+   \   000004                ; Setup parameters for call to function Initial
+   \   000004   12....       LCALL   ??Initial?relay
+     72            PcdReset();
+   \   000007                ; Setup parameters for call to function PcdReset
+   \   000007   12....       LCALL   ??PcdReset?relay
+     73            M500PcdConfigISOType('A');
+   \   00000A                ; Setup parameters for call to function M500PcdConfigISOType
+   \   00000A   7941         MOV     R1,#0x41
+   \   00000C   12....       LCALL   ??M500PcdConfigISOType?relay
+     74          }
+   \   00000F   80..         SJMP    ?Subroutine0
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??Initial?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    Initial
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??IC_Test?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    IC_Test
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??IC_Init?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    IC_Init
+
+   Maximum stack usage in bytes:
+
+     Function                  ISTACK PSTACK XSTACK
+     --------                  ------ ------ ------
+     IC_Init                       2      0      0
+       -> Initial                  4      0      0
+       -> PcdReset                 4      0      0
+       -> M500PcdConfigISOType     4      0      0
+     IC_Test                       2      0      0
+       -> PcdRequest               4      0      0
+       -> PcdRequest               4      0      0
+       -> PcdAnticoll              4      0      0
+     Initial                       0      0      0
+
+
+   Segment part sizes:
+
+     Function/Label  Bytes
+     --------------  -----
+     _A_P0              1
+     P0INP              1
+     _A_P2              1
+     P0SEL              1
+     P2SEL              1
+     P2INP              1
+     P0DIR              1
+     P2DIR              1
+     ucTagType          4
+     buf                4
+     Initial           52
+     IC_Test           45
+     ?Subroutine0       7
+     IC_Init           17
+     ??Initial?relay    6
+     ??IC_Test?relay    6
+     ??IC_Init?relay    6
+
+ 
+ 121 bytes in segment BANKED_CODE
+  18 bytes in segment BANK_RELAYS
+   8 bytes in segment SFR_AN
+   8 bytes in segment XDATA_Z
+ 
+ 139 bytes of CODE  memory
+   0 bytes of DATA  memory (+ 8 bytes shared)
+   8 bytes of XDATA memory
+
+Errors: none
+Warnings: none

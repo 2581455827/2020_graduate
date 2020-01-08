@@ -1,0 +1,338 @@
+###############################################################################
+#                                                                             #
+# IAR C/C++ Compiler V8.10.1.10194/W32 for 8051         03/Dec/2019  16:46:25 #
+# Copyright 2004-2011 IAR Systems AB.                                         #
+#                                                                             #
+#    Core               =  plain                                              #
+#    Code model         =  banked                                             #
+#    Data model         =  large                                              #
+#    Calling convention =  xdata reentrant                                    #
+#    Constant location  =  data_rom                                           #
+#    Dptr setup         =  1,16                                               #
+#    Source file        =  C:\Users\25814\Desktop\2020±ÏÉè\¿µè÷ìÚ_Á¸²Ö\Projec #
+#                          ts\zstack\Samples\SampleApp\CC2530DB\Source\Sample #
+#                          AppHw.c                                            #
+#    Command line       =  -f C:\Users\25814\Desktop\2020±ÏÉè\¿µè÷ìÚ_Á¸²Ö\Pro #
+#                          jects\zstack\Samples\SampleApp\CC2530DB\..\..\..\T #
+#                          ools\CC2530DB\f8wCoord.cfg (-DCPU32MHZ             #
+#                          -DROOT=__near_func -DMAC_CFG_APP_PENDING_QUEUE=TRU #
+#                          E -DMAC_CFG_TX_DATA_MAX=5 -DMAC_CFG_TX_MAX=8       #
+#                          -DMAC_CFG_RX_MAX=5 -DZDO_COORDINATOR -DRTR_NWK)    #
+#                          -f C:\Users\25814\Desktop\2020±ÏÉè\¿µè÷ìÚ_Á¸²Ö\Pro #
+#                          jects\zstack\Samples\SampleApp\CC2530DB\..\..\..\T #
+#                          ools\CC2530DB\f8wConfig.cfg (-DZIGBEEPRO           #
+#                          -DSECURE=0 -DZG_SECURE_DYNAMIC=0 -DREFLECTOR       #
+#                          -DDEFAULT_CHANLIST=0x00000800                      #
+#                          -DZDAPP_CONFIG_PAN_ID=0xFFF1                       #
+#                          -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_MA #
+#                          SK=0x007F -DBEACON_REQUEST_DELAY=100               #
+#                          -DBEACON_REQ_DELAY_MASK=0x00FF                     #
+#                          -DLINK_STATUS_JITTER_MASK=0x007F                   #
+#                          -DROUTE_EXPIRY_TIME=30 -DAPSC_ACK_WAIT_DURATION_PO #
+#                          LLED=3000 -DNWK_INDIRECT_MSG_TIMEOUT=7             #
+#                          -DMAX_RREQ_ENTRIES=8 -DAPSC_MAX_FRAME_RETRIES=3    #
+#                          -DNWK_MAX_DATA_RETRIES=2                           #
+#                          -DMAX_POLL_FAILURE_RETRIES=2 -DMAX_BCAST=9         #
+#                          -DAPS_MAX_GROUPS=16 -DMAX_RTG_ENTRIES=40           #
+#                          -DNWK_MAX_BINDING_ENTRIES=4                        #
+#                          -DMAX_BINDING_CLUSTER_IDS=4 "-DDEFAULT_KEY={0x01,  #
+#                          0x03, 0x05, 0x07, 0x09, 0x0B, 0x0D, 0x0F, 0x00,    #
+#                          0x02, 0x04, 0x06, 0x08, 0x0A, 0x0C, 0x0D}"         #
+#                          -DMAC_MAX_FRAME_SIZE=116                           #
+#                          -DZDNWKMGR_MIN_TRANSMISSIONS=20 "-DCONST=const     #
+#                          __code" -DGENERIC=__generic                        #
+#                          -DRFD_RCVC_ALWAYS_ON=FALSE -DPOLL_RATE=1000        #
+#                          -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100)   #
+#                          -DREJOIN_POLL_RATE=440 C:\Users\25814\Desktop\2020 #
+#                          ±ÏÉè\¿µè÷ìÚ_Á¸²Ö\Projects\zstack\Samples\SampleApp #
+#                          \CC2530DB\Source\SampleAppHw.c -D ZAPP_P1 -D       #
+#                          MT_TASK -D MT_SYS_FUNC -D MT_ZDO_FUNC -D           #
+#                          LCD_SUPPORTED=DEBUG -lC C:\Users\25814\Desktop\202 #
+#                          0±ÏÉè\¿µè÷ìÚ_Á¸²Ö\Projects\zstack\Samples\SampleAp #
+#                          p\CC2530DB\CoordinatorEB\List\ -lA                 #
+#                          C:\Users\25814\Desktop\2020±ÏÉè\¿µè÷ìÚ_Á¸²Ö\Projec #
+#                          ts\zstack\Samples\SampleApp\CC2530DB\CoordinatorEB #
+#                          \List\ --diag_suppress Pe001,Pa010 -o              #
+#                          C:\Users\25814\Desktop\2020±ÏÉè\¿µè÷ìÚ_Á¸²Ö\Projec #
+#                          ts\zstack\Samples\SampleApp\CC2530DB\CoordinatorEB #
+#                          \Obj\ -e --no_code_motion --debug --core=plain     #
+#                          --dptr=16,1 --data_model=large                     #
+#                          --code_model=banked --calling_convention=xdata_ree #
+#                          ntrant --place_constants=data_rom                  #
+#                          --nr_virtual_regs 16 -I C:\Users\25814\Desktop\202 #
+#                          0±ÏÉè\¿µè÷ìÚ_Á¸²Ö\Projects\zstack\Samples\SampleAp #
+#                          p\CC2530DB\ -I C:\Users\25814\Desktop\2020±ÏÉè\¿µè #
+#                          ÷ìÚ_Á¸²Ö\Projects\zstack\Samples\SampleApp\CC2530D #
+#                          B\..\Source\ -I C:\Users\25814\Desktop\2020±ÏÉè\¿µ #
+#                          è÷ìÚ_Á¸²Ö\Projects\zstack\Samples\SampleApp\CC2530 #
+#                          DB\..\..\..\ZMain\TI2530DB\ -I                     #
+#                          C:\Users\25814\Desktop\2020±ÏÉè\¿µè÷ìÚ_Á¸²Ö\Projec #
+#                          ts\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\. #
+#                          .\Components\hal\include\ -I                       #
+#                          C:\Users\25814\Desktop\2020±ÏÉè\¿µè÷ìÚ_Á¸²Ö\Projec #
+#                          ts\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\. #
+#                          .\Components\hal\target\CC2530EB\ -I               #
+#                          C:\Users\25814\Desktop\2020±ÏÉè\¿µè÷ìÚ_Á¸²Ö\Projec #
+#                          ts\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\. #
+#                          .\Components\mac\include\ -I                       #
+#                          C:\Users\25814\Desktop\2020±ÏÉè\¿µè÷ìÚ_Á¸²Ö\Projec #
+#                          ts\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\. #
+#                          .\Components\mac\high_level\ -I                    #
+#                          C:\Users\25814\Desktop\2020±ÏÉè\¿µè÷ìÚ_Á¸²Ö\Projec #
+#                          ts\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\. #
+#                          .\Components\mac\low_level\srf04\ -I               #
+#                          C:\Users\25814\Desktop\2020±ÏÉè\¿µè÷ìÚ_Á¸²Ö\Projec #
+#                          ts\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\. #
+#                          .\Components\mac\low_level\srf04\single_chip\ -I   #
+#                          C:\Users\25814\Desktop\2020±ÏÉè\¿µè÷ìÚ_Á¸²Ö\Projec #
+#                          ts\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\. #
+#                          .\Components\mt\ -I C:\Users\25814\Desktop\2020±ÏÉ #
+#                          è\¿µè÷ìÚ_Á¸²Ö\Projects\zstack\Samples\SampleApp\CC #
+#                          2530DB\..\..\..\..\..\Components\osal\include\ -I  #
+#                          C:\Users\25814\Desktop\2020±ÏÉè\¿µè÷ìÚ_Á¸²Ö\Projec #
+#                          ts\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\. #
+#                          .\Components\services\saddr\ -I                    #
+#                          C:\Users\25814\Desktop\2020±ÏÉè\¿µè÷ìÚ_Á¸²Ö\Projec #
+#                          ts\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\. #
+#                          .\Components\services\sdata\ -I                    #
+#                          C:\Users\25814\Desktop\2020±ÏÉè\¿µè÷ìÚ_Á¸²Ö\Projec #
+#                          ts\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\. #
+#                          .\Components\stack\af\ -I                          #
+#                          C:\Users\25814\Desktop\2020±ÏÉè\¿µè÷ìÚ_Á¸²Ö\Projec #
+#                          ts\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\. #
+#                          .\Components\stack\nwk\ -I                         #
+#                          C:\Users\25814\Desktop\2020±ÏÉè\¿µè÷ìÚ_Á¸²Ö\Projec #
+#                          ts\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\. #
+#                          .\Components\stack\sapi\ -I                        #
+#                          C:\Users\25814\Desktop\2020±ÏÉè\¿µè÷ìÚ_Á¸²Ö\Projec #
+#                          ts\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\. #
+#                          .\Components\stack\sec\ -I                         #
+#                          C:\Users\25814\Desktop\2020±ÏÉè\¿µè÷ìÚ_Á¸²Ö\Projec #
+#                          ts\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\. #
+#                          .\Components\stack\sys\ -I                         #
+#                          C:\Users\25814\Desktop\2020±ÏÉè\¿µè÷ìÚ_Á¸²Ö\Projec #
+#                          ts\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\. #
+#                          .\Components\stack\zdo\ -I                         #
+#                          C:\Users\25814\Desktop\2020±ÏÉè\¿µè÷ìÚ_Á¸²Ö\Projec #
+#                          ts\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\. #
+#                          .\Components\zmac\ -I C:\Users\25814\Desktop\2020± #
+#                          ÏÉè\¿µè÷ìÚ_Á¸²Ö\Projects\zstack\Samples\SampleApp\ #
+#                          CC2530DB\..\..\..\..\..\Components\zmac\f8w\ -Ohz  #
+#    List file          =  C:\Users\25814\Desktop\2020±ÏÉè\¿µè÷ìÚ_Á¸²Ö\Projec #
+#                          ts\zstack\Samples\SampleApp\CC2530DB\CoordinatorEB #
+#                          \List\SampleAppHw.lst                              #
+#    Object file        =  C:\Users\25814\Desktop\2020±ÏÉè\¿µè÷ìÚ_Á¸²Ö\Projec #
+#                          ts\zstack\Samples\SampleApp\CC2530DB\CoordinatorEB #
+#                          \Obj\SampleAppHw.r51                               #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+C:\Users\25814\Desktop\2020±ÏÉè\¿µè÷ìÚ_Á¸²Ö\Projects\zstack\Samples\SampleApp\CC2530DB\Source\SampleAppHw.c
+      1          /******************************************************************************
+      2            Filename:       SampleAppHw.c
+      3            Revised:        $Date: 2010-11-15 18:17:40 -0800 (Mon, 15 Nov 2010) $
+      4            Revision:       $Revision: 24415 $
+      5          
+      6            Description:    Hardware setup for SampleApp
+      7          
+      8          
+      9            Copyright 2008-2010 Texas Instruments Incorporated. All rights reserved.
+     10          
+     11            IMPORTANT: Your use of this Software is limited to those specific rights
+     12            granted under the terms of a software license agreement between the user
+     13            who downloaded the software, his/her employer (which must be your employer)
+     14            and Texas Instruments Incorporated (the "License").  You may not use this
+     15            Software unless you agree to abide by the terms of the License. The License
+     16            limits your use, and you acknowledge, that the Software may not be modified,
+     17            copied or distributed unless embedded on a Texas Instruments microcontroller
+     18            or used solely and exclusively in conjunction with a Texas Instruments radio
+     19            frequency transceiver, which is integrated into your product. Other than for
+     20            the foregoing purpose, you may not use, reproduce, copy, prepare derivative
+     21            works of, modify, distribute, perform, display or sell this Software and/or
+     22            its documentation for any purpose.
+     23          
+     24            YOU FURTHER ACKNOWLEDGE AND AGREE THAT THE SOFTWARE AND DOCUMENTATION ARE
+     25            PROVIDED “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED,
+     26            INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY, TITLE,
+     27            NON-INFRINGEMENT AND FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL
+     28            TEXAS INSTRUMENTS OR ITS LICENSORS BE LIABLE OR OBLIGATED UNDER CONTRACT,
+     29            NEGLIGENCE, STRICT LIABILITY, CONTRIBUTION, BREACH OF WARRANTY, OR OTHER
+     30            LEGAL EQUITABLE THEORY ANY DIRECT OR INDIRECT DAMAGES OR EXPENSES
+     31            INCLUDING BUT NOT LIMITED TO ANY INCIDENTAL, SPECIAL, INDIRECT, PUNITIVE
+     32            OR CONSEQUENTIAL DAMAGES, LOST PROFITS OR LOST DATA, COST OF PROCUREMENT
+     33            OF SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
+     34            (INCLUDING BUT NOT LIMITED TO ANY DEFENSE THEREOF), OR OTHER SIMILAR COSTS.
+     35          
+     36            Should you have any questions regarding your right to use this Software,
+     37            contact Texas Instruments Incorporated at www.TI.com.
+     38          ******************************************************************************/
+     39          
+     40          /******************************************************************************
+     41           * INCLUDES
+     42           */
+     43          #include "ZComDef.h"
+     44          #include "hal_mcu.h"
+
+   \                                 In  segment SFR_AN, at 0x80
+   \   union <unnamed> volatile __sfr _A_P0
+   \                     _A_P0:
+   \   000000                DS 1
+
+   \                                 In  segment SFR_AN, at 0xf3
+   \   unsigned char volatile __sfr P0SEL
+   \                     P0SEL:
+   \   000000                DS 1
+
+   \                                 In  segment SFR_AN, at 0xfd
+   \   unsigned char volatile __sfr P0DIR
+   \                     P0DIR:
+   \   000000                DS 1
+     45          #include "hal_defs.h"
+     46          
+     47          #include "SampleAppHw.h"
+     48          
+     49          /******************************************************************************
+     50           * CONSTANTS
+     51           */
+     52          
+     53          /* NOTE:  A jumper on SmartRF05 header P18 is used to select device start-up as
+     54           *        a ZigBee Coordinator. The jumper connects GPIO pins P0.2 and P0.3:
+     55           *        On SmartRF05 Rev 1.3 or earlier:  P0.2=P18 pin 7, P0.3=P18 pin 9
+     56           *        On SmartRF05 Rev 1.7 or later:    P0.2=P18 pin 9, P0.3=P18 pin 11
+     57           */
+     58          
+     59          #define JUMPERIN_BIT  BV(2)  //P0.2
+     60          #define JUMPERIN_SEL  P0SEL
+     61          #define JUMPERIN_DIR  P0DIR
+     62          #define JUMPERIN      P0
+     63          
+     64          #define JUMPEROUT_BIT BV(3)  //P0.3
+     65          #define JUMPEROUT_SEL P0SEL
+     66          #define JUMPEROUT_DIR P0DIR
+     67          #define JUMPEROUT     P0
+     68          
+     69          /******************************************************************************
+     70           * @fn      readCoordinatorJumper
+     71           *
+     72           * @brief   Checks for a jumper between 2 GPIO pins to determine if the device
+     73           *          should start-up as a ZigBee Coordinator
+     74           *
+     75           * @return  TRUE if the jumper is there, FALSE if not
+     76           */
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+     77          uint8 readCoordinatorJumper( void )
+   \                     readCoordinatorJumper:
+     78          {
+   \   000000                ; Saved register size: 0
+   \   000000                ; Auto size: 0
+     79            uint8 i,j;
+     80            uint8 result;
+     81          
+     82            JUMPERIN_SEL  &= ~(JUMPERIN_BIT);
+   \   000000   53F3FB       ANL     0xf3,#0xfb
+     83            JUMPERIN_DIR  &= ~(JUMPERIN_BIT);
+   \   000003   53FDFB       ANL     0xfd,#0xfb
+     84          
+     85            JUMPEROUT_SEL &= ~(JUMPEROUT_BIT);
+   \   000006   53F3F7       ANL     0xf3,#0xf7
+     86            JUMPEROUT_DIR |= JUMPEROUT_BIT;
+   \   000009   43FD08       ORL     0xfd,#0x8
+     87          
+     88            // Start with output bit OFF
+     89            JUMPEROUT &= ~(JUMPEROUT_BIT);
+   \   00000C   C283         CLR     0x80.3
+     90          
+     91            for ( i = 0; i < 8; i++ )
+   \   00000E   7900         MOV     R1,#0x0
+     92            {
+     93              for ( j = 0; j < 8; j++ )
+   \                     ??readCoordinatorJumper_0:
+   \   000010   7808         MOV     R0,#0x8
+     94              {
+     95                // Burn time for input to see change
+     96                result = JUMPERIN & JUMPERIN_BIT;
+   \                     ??readCoordinatorJumper_1:
+   \   000012   E580         MOV     A,0x80
+   \   000014   5404         ANL     A,#0x4
+   \   000016   FA           MOV     R2,A
+     97              }
+   \   000017   18           DEC     R0
+   \   000018   E8           MOV     A,R0
+   \   000019   70F7         JNZ     ??readCoordinatorJumper_1
+     98          
+     99              j = i & 0x01;
+    100              if (((j == 0) && (result != 0)) ||
+    101                  ((j != 0) && (result != JUMPERIN_BIT)))
+   \   00001B   E9           MOV     A,R1
+   \   00001C   A2E0         MOV     C,0xE0 /* A   */.0
+   \   00001E   4012         JC      ??readCoordinatorJumper_2
+   \   000020   EA           MOV     A,R2
+   \   000021   7014         JNZ     ??readCoordinatorJumper_3
+    102              {
+    103                return ( FALSE );
+    104              }
+    105          
+    106              // Toggle the output bit
+    107              JUMPEROUT ^= JUMPEROUT_BIT;
+   \                     ??readCoordinatorJumper_4:
+   \   000023   638008       XRL     0x80,#0x8
+   \   000026   09           INC     R1
+   \   000027   E9           MOV     A,R1
+   \   000028   C3           CLR     C
+   \   000029   9408         SUBB    A,#0x8
+   \   00002B   40E3         JC      ??readCoordinatorJumper_0
+    108            }
+    109          
+    110            return ( TRUE );
+   \   00002D   7901         MOV     R1,#0x1
+   \                     ??readCoordinatorJumper_5:
+   \   00002F   02....       LJMP    ?BRET
+   \                     ??readCoordinatorJumper_2:
+   \   000032   7404         MOV     A,#0x4
+   \   000034   6A           XRL     A,R2
+   \   000035   60EC         JZ      ??readCoordinatorJumper_4
+   \                     ??readCoordinatorJumper_3:
+   \   000037   7900         MOV     R1,#0x0
+   \   000039   80F4         SJMP    ??readCoordinatorJumper_5
+   \   00003B                REQUIRE P0SEL
+   \   00003B                REQUIRE P0DIR
+   \   00003B                REQUIRE _A_P0
+    111          }
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??readCoordinatorJumper?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    readCoordinatorJumper
+    112          
+    113          /******************************************************************************
+    114           */
+
+   Maximum stack usage in bytes:
+
+     Function              ISTACK PSTACK XSTACK
+     --------              ------ ------ ------
+     readCoordinatorJumper     0      0      0
+
+
+   Segment part sizes:
+
+     Function/Label                Bytes
+     --------------                -----
+     _A_P0                            1
+     P0SEL                            1
+     P0DIR                            1
+     readCoordinatorJumper           59
+     ??readCoordinatorJumper?relay    6
+
+ 
+ 59 bytes in segment BANKED_CODE
+  6 bytes in segment BANK_RELAYS
+  3 bytes in segment SFR_AN
+ 
+ 65 bytes of CODE memory
+  0 bytes of DATA memory (+ 3 bytes shared)
+
+Errors: none
+Warnings: none
