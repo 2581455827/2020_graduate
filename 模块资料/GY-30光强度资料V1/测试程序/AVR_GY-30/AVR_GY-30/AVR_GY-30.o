@@ -1,0 +1,441 @@
+XL
+H 4 areas 1C global symbols
+M AVR_GY
+S elpm32 Ref0000
+S mod16u Ref0000
+S div16u Ref0000
+S push_xgset300C Ref0000
+S fpint Ref0000
+S push_xgset303C Ref0000
+S push_xgsetF00C Ref0000
+S fpdiv2 Ref0000
+S pop_xgset300C Ref0000
+S pop_xgset303C Ref0000
+S pop_xgsetF00C Ref0000
+S uint2fp Ref0000
+A text size 334 flags 0
+dbfile D:\MCU_Project\MCU_AVR\AVR_GY-30\AVR_GY-30.c
+dbfile D:\MCU_Project\MCU_AVR\AVR_GY-30\delay.h
+dbfunc e delay_1us 0 fV
+dbline FFFFFFFF 0
+dbline F 0
+dbline 10 0
+dbline FFFFFFFE 2
+dbline 0 2
+dbfunc e delay_nus 4 fV
+dbsym r i 14 i
+dbsym r n A i
+dbline FFFFFFFF A
+dbline 14 A
+dbline 15 A
+dbline 16 E
+dbline 17 10
+dbline 16 12
+dbline 16 16
+dbline FFFFFFFE 1C
+dbline 0 1C
+dbfunc e delay_1ms 20 fV
+dbsym r i 10 i
+dbline FFFFFFFF 20
+dbline 1B 20
+dbline 1D 20
+dbline 1D 26
+dbline 1D 26
+dbline 1D 2A
+dbline FFFFFFFE 32
+dbline 0 32
+dbfunc e delay_nms 34 fV
+dbsym r i 14 i
+dbsym r n A i
+dbline FFFFFFFF 3A
+dbline 21 3A
+dbline 22 3A
+dbline 23 3E
+dbline 24 40
+dbline 23 42
+dbline 23 46
+dbline FFFFFFFE 4C
+dbline 0 4C
+dbfile D:\MCU_Project\MCU_AVR\AVR_GY-30\I2C.h
+dbfunc e I2C_Write 50 fc
+dbsym r Wdata 10 c
+dbline FFFFFFFF 50
+dbline 29 50
+dbline 2A 50
+dbline 2B 54
+dbline 2B 54
+dbline 2B 54
+dbline 2B 5A
+dbline 2B 5A
+dbline 2C 5A
+dbline 2D 62
+dbline 2F 66
+dbline 2F 66
+dbline 2F 6A
+dbline 2F 6E
+dbline 2F 6E
+dbline 30 6E
+dbline 30 6E
+dbline 30 6E
+dbline 30 74
+dbline 30 74
+dbline 31 74
+dbline 32 7C
+dbline 34 80
+dbline 34 80
+dbline 34 82
+dbline 34 86
+dbline 34 86
+dbline 35 86
+dbline 35 86
+dbline 35 86
+dbline 35 8C
+dbline 35 8C
+dbline 36 8C
+dbline 37 94
+dbline 38 98
+dbline 39 9C
+dbline FFFFFFFE 9E
+dbline 0 9E
+dbfunc e I2C_Read A0 fi
+dbsym r temp 10 i
+dbline FFFFFFFF A0
+dbline 41 A0
+dbline 44 A0
+dbline 45 A4
+dbline 45 A4
+dbline 45 A4
+dbline 45 AA
+dbline 45 AA
+dbline 46 AA
+dbline 47 B2
+dbline 49 B8
+dbline 49 B8
+dbline 49 BC
+dbline 49 C0
+dbline 49 C0
+dbline 4A C0
+dbline 4A C0
+dbline 4A C0
+dbline 4A C6
+dbline 4A C6
+dbline 4B C6
+dbline 4C CE
+dbline 4E D4
+dbline 4F D8
+dbline 50 DC
+dbline 50 DC
+dbline 50 DC
+dbline 50 E2
+dbline 50 E2
+dbline 51 E2
+dbline 53 E6
+dbline 54 EA
+dbline 54 EA
+dbline 54 EA
+dbline 54 F0
+dbline 54 F0
+dbline 55 F0
+dbline 56 F6
+dbline 57 FA
+dbline FFFFFFFE FA
+dbline 0 FA
+dbfile D:\MCU_Project\MCU_AVR\AVR_GY-30\1602.h
+dbfunc e LCD_init FC fV
+dbline FFFFFFFF FE
+dbline 2C FE
+dbline 2D FE
+dbline 2E 104
+dbline 2F 106
+dbline 30 108
+dbline 31 10C
+dbline 32 10E
+dbline 33 114
+dbline 34 118
+dbline 35 11C
+dbline 36 120
+dbline 37 126
+dbline 38 134
+dbline FFFFFFFE 13A
+dbline 0 13A
+dbfunc e LCD_en_write 13E fV
+dbline FFFFFFFF 13E
+dbline 3C 13E
+dbline 3D 13E
+dbline 3E 140
+dbline 3F 146
+dbline FFFFFFFE 148
+dbline 0 148
+dbfunc e LCD_write_command 14A fV
+dbsym r command 14 c
+dbline FFFFFFFF 14E
+dbline 43 14E
+dbline 45 14E
+dbline 46 154
+dbline 47 156
+dbline 48 15C
+dbline 49 166
+dbline 4A 168
+dbline 4B 170
+dbline 4C 176
+dbline 4D 180
+dbline FFFFFFFE 182
+dbline 0 182
+dbfunc e LCD_write_data 186 fV
+dbsym r data 14 c
+dbline FFFFFFFF 18A
+dbline 5E 18A
+dbline 60 18A
+dbline 61 190
+dbline 62 192
+dbline 63 198
+dbline 64 1A2
+dbline 65 1A4
+dbline 66 1AC
+dbline 67 1B2
+dbline 68 1BC
+dbline FFFFFFFE 1BE
+dbline 0 1BE
+dbfunc e LCD_set_xy 1C2 fV
+dbsym r address 14 c
+dbsym r y A c
+dbsym r x 16 c
+dbline FFFFFFFF 1CA
+dbline 7B 1CA
+dbline 7D 1CA
+dbline 7D 1CE
+dbline 7E 1D4
+dbline 7F 1D8
+dbline FFFFFFFE 1DC
+dbline 0 1DC
+dbfunc e LCD_write_string 1E0 fV
+dbsym r s 14 pc
+dbsym r Y C c
+dbsym r X A c
+dbline FFFFFFFF 1EC
+dbline 83 1EC
+dbline 84 1EC
+dbline 86 1F4
+dbline 87 1F4
+dbline 88 1FA
+dbline 89 1FE
+dbline 85 1FE
+dbline FFFFFFFE 206
+dbline 0 206
+dbfunc e LCD_write_char 20A fV
+dbsym l data 2 c
+dbsym r Y C c
+dbsym r X A c
+dbline FFFFFFFF 212
+dbline 8E 212
+dbline 8F 212
+dbline 90 218
+dbline FFFFFFFE 21C
+dbline 0 21C
+dbfile D:\MCU_Project\MCU_AVR\AVR_GY-30\AVR_GY-30.c
+dbfunc e conversion 222 fV
+dbsym r i 14 i
+dbline FFFFFFFF 228
+dbline 19 228
+dbline 1A 228
+dbline 1B 23A
+dbline 1C 246
+dbline 1D 256
+dbline 1E 262
+dbline 1F 272
+dbline 20 27E
+dbline 21 28E
+dbline 22 29A
+dbline FFFFFFFE 2A2
+dbline 0 2A2
+dbfunc e main 2A8 fV
+dbsym l lux_data 2 D
+dbsym r i A c
+dbline FFFFFFFF 2AA
+dbline 28 2AA
+dbline 2C 2AA
+dbline 2D 2B0
+dbline 2E 2B2
+dbline 2F 2B8
+dbline 30 2C0
+dbline 31 2C0
+dbline 32 2C4
+dbline 33 2CC
+dbline 34 2D0
+dbline 35 2D6
+dbline 35 2DA
+dbline 36 2DA
+dbline 37 2EA
+dbline 38 312
+dbline 39 320
+dbline 3A 32E
+dbline 3C 32E
+dbline 30 32E
+dbline FFFFFFFE 330
+dbline 0 330
+S _main Def02A8
+S _delay_nms Def0034
+S _delay_nus Def0004
+S _LCD_set_xy Def01C2
+S _LCD_init Def00FC
+S _I2C_Write Def0050
+S _conversion Def0222
+S _LCD_write_string Def01E0
+S _LCD_write_data Def0186
+S _LCD_write_char Def020A
+S _delay_1ms Def0020
+S _delay_1us Def0000
+S _LCD_en_write Def013E
+S _I2C_Read Def00A0
+S _LCD_write_command Def014A
+A data size 17 flags 20
+dbfile D:\MCU_Project\MCU_AVR\AVR_GY-30\1602.h
+dbfile D:\MCU_Project\MCU_AVR\AVR_GY-30\AVR_GY-30.c
+dbsym e display 0 A[9:9]c
+S _display Def0000
+A idata size 17 flags 0
+A lit size 4 flags 0
+T 00 00 00 00 08 95
+R 00 00 00 00
+T 04 00 0E 94 00 00 58 01 44 27 55 27 03 C0 F7 DF
+R 00 00 00 00 12 04 03 00
+T 12 00 4F 5F 5F 4F 4A 15 5B 05 D0 F3 0C 94 00 00
+R 00 00 00 00 12 0E 08 00
+T 20 00 00 27 11 27 02 C0 0F 5F 1F 4F 0C 3D E5 E0
+R 00 00 00 00
+T 2E 00 1E 07 D0 F3 08 95
+R 00 00 00 00
+T 34 00 0E 94 00 00 58 01 44 27 55 27 03 C0 EF DF
+R 00 00 00 00 12 04 03 00
+T 42 00 4F 5F 5F 4F 4A 15 5B 05 D0 F3 0C 94 00 00
+R 00 00 00 00 12 0E 08 00
+T 50 00 84 EA 86 BF 26 B6 27 FE FD CF 81 B1 88 7F
+R 00 00 00 00
+T 5E 00 88 30 11 F0 01 E0 1C C0 86 E4 83 B9 84 E8
+R 00 00 00 00
+T 6C 00 86 BF 26 B6 27 FE FD CF 81 B1 88 7F 88 31
+R 00 00 00 00
+T 7A 00 11 F0 01 E0 0F C0 03 B9 84 E8 86 BF 26 B6
+R 00 00 00 00
+T 88 00 27 FE FD CF 81 B1 88 7F 88 32 11 F0 01 E0
+R 00 00 00 00
+T 96 00 03 C0 84 E9 86 BF 00 27 08 95
+R 00 00 00 00
+T A0 00 84 EA 86 BF 26 B6 27 FE FD CF 81 B1 88 7F
+R 00 00 00 00
+T AE 00 88 30 19 F0 01 E0 10 E0 21 C0 87 E4 83 B9
+R 00 00 00 00
+T BC 00 84 E8 86 BF 26 B6 27 FE FD CF 81 B1 88 7F
+R 00 00 00 00
+T CA 00 80 34 19 F0 01 E0 10 E0 13 C0 84 E8 86 BF
+R 00 00 00 00
+T D8 00 84 EC 86 BF 26 B6 27 FE FD CF 03 B1 11 27
+R 00 00 00 00
+T E6 00 84 E8 86 BF 26 B6 27 FE FD CF 23 B0 10 2F
+R 00 00 00 00
+T F4 00 02 2D 84 E9 86 BF 08 95
+R 00 00 00 00
+T FC 00 22 97 8A B3 80 6F 8A BB A7 9A A6 9A 08 E2
+R 00 00 00 00
+T 0A 01 1F D0 18 D0 04 E6 10 E0 78 DF 08 E2 19 D0
+R 00 00 00 00
+T 18 01 0C E0 17 D0 01 E0 15 D0 0A E0 10 E0 87 DF
+R 00 00 00 00
+T 26 01 80 E0 90 E0 99 83 88 83 22 27 00 27 56 D0
+R 00 00 00 00 20 02 01 00 09 00 40 04 01 00 09 00
+T 34 01 0A E0 10 E0 7D DF 22 96 08 95
+R 00 00 00 00
+T 3E 01 AF 9A 0A E0 10 E0 5F DF AF 98 08 95
+R 00 00 00 00
+T 4A 01 4A 93 40 2F 00 E1 10 E0 58 DF AE 98 8B B3
+R 00 00 00 00
+T 58 01 8F 70 8B BB 84 2F 80 7F 2B B2 28 2A 2B BA
+R 00 00 00 00
+T 66 01 EB DF 84 2F 8F 70 82 95 48 2F 8B B3 8F 70
+R 00 00 00 00
+T 74 01 8B BB 84 2F 80 7F 2B B2 28 2A 2B BA DE DF
+R 00 00 00 00
+T 82 01 49 91 08 95
+R 00 00 00 00
+T 86 01 4A 93 40 2F 00 E1 10 E0 3A DF AE 9A 8B B3
+R 00 00 00 00
+T 94 01 8F 70 8B BB 84 2F 80 7F 2B B2 28 2A 2B BA
+R 00 00 00 00
+T A2 01 CD DF 84 2F 8F 70 82 95 48 2F 8B B3 8F 70
+R 00 00 00 00
+T B0 01 8B BB 84 2F 80 7F 2B B2 28 2A 2B BA C0 DF
+R 00 00 00 00
+T BE 01 49 91 08 95
+R 00 00 00 00
+T C2 01 0E 94 00 00 A2 2E 60 2F AA 20 19 F4 46 2F
+R 00 00 00 00 12 04 06 00
+T D0 01 40 58 02 C0 46 2F 40 54 04 2F B7 DF
+R 00 00 00 00
+T DC 01 0C 94 00 00
+R 00 00 00 00 12 04 0A 00
+T E0 01 0E 94 00 00 C2 2E A0 2E 4E 81 5F 81 2C 2D
+R 00 00 00 00 12 04 05 00
+T EE 01 0A 2D E8 DF 05 C0 FA 01 00 81 C6 DF 4F 5F
+R 00 00 00 00
+T FC 01 5F 4F FA 01 20 80 22 20 B9 F7 0C 94 00 00
+R 00 00 00 00 12 0E 09 00
+T 0A 02 AA 92 CA 92 C2 2E A0 2E 2C 2D 0A 2D D5 DF
+R 00 00 00 00
+T 18 02 0A 81 B5 DF C9 90 A9 90 08 95
+R 00 00 00 00
+T 00 00 00 00
+R 00 00 02 00
+T 02 00 00 00
+R 00 00 02 00
+T 04 00 00 20
+R 00 00 02 00
+T 06 00 6C 75
+R 00 00 02 00
+T 08 00 78
+R 00 00 02 00
+T 22 02 4A 93 5A 93 A8 01 20 E1 37 E2 8A 01
+R 00 00 00 00
+T 2E 02 0E 94 00 00 C8 01 C0 96 80 93 00 00 20 E1
+R 00 00 00 00 12 04 02 00 00 0C 01 00
+T 3C 02 37 E2 8A 01 0E 94 00 00 A8 01 28 EE 33 E0
+R 00 00 00 00 12 08 01 00
+T 4A 02 0E 94 00 00 C8 01 C0 96 80 93 01 00 28 EE
+R 00 00 00 00 12 04 02 00 00 0C 01 00
+T 58 02 33 E0 8A 01 0E 94 00 00 A8 01 24 E6 30 E0
+R 00 00 00 00 12 08 01 00
+T 66 02 0E 94 00 00 C8 01 C0 96 80 93 02 00 24 E6
+R 00 00 00 00 12 04 02 00 00 0C 01 00
+T 74 02 30 E0 8A 01 0E 94 00 00 A8 01 2A E0 30 E0
+R 00 00 00 00 12 08 01 00
+T 82 02 0E 94 00 00 C8 01 C0 96 80 93 03 00 2A E0
+R 00 00 00 00 12 04 02 00 00 0C 01 00
+T 90 02 30 E0 8A 01 0E 94 00 00 A8 01 CA 01 C0 96
+R 00 00 00 00 12 08 01 00
+T 9E 02 80 93 04 00 59 91 49 91 08 95
+R 00 00 00 00 00 04 01 00
+T A8 02 26 97 0A E0 10 E0 C2 DE 25 DF 01 E0 CD DE
+R 00 00 00 00
+T B6 02 A0 2E 0A E0 10 E0 BB DE 37 C0 01 E0 C6 DE
+R 00 00 00 00
+T C4 02 00 E1 C4 DE C0 2E AC 2C 22 24 26 BE 04 EB
+R 00 00 00 00
+T D2 02 10 E0 AF DE CC 20 51 F5 E2 DE 58 01
+R 00 00 00 00
+T DE 02 0E 94 00 00 0A 83 1B 83 2C 83 3D 83 2A 80
+R 00 00 00 00 12 04 0B 00
+T EC 02 3B 80 4C 80 5D 80 00 E0 10 E0
+R 00 00 00 00 20 08 03 00 00 00 40 0A 03 00 00 00
+T F6 02 0E 94 00 00 3A 93 2A 93 1A 93 0A 93 81 01
+R 00 00 00 00 12 04 00 00
+T 04 03 92 01 0E 94 00 00 0A 83 1B 83 2C 83 3D 83
+R 00 00 00 00 12 06 07 00
+T 12 03 0A 81 1B 81 2C 81 3D 81 0E 94 00 00 81 DF
+R 00 00 00 00 12 0C 04 00
+T 20 03 80 E0 90 E0 99 83 88 83 22 27 07 E0 59 DF
+R 00 00 00 00 20 02 01 00 00 00 40 04 01 00 00 00
+T 2E 03 C8 CF 26 96 08 95
+R 00 00 00 00
+T 00 00 9A 99 99 3F
+R 00 00 03 00
+T 09 00 4C 69 67 68 74 3A 20 20 20 20 20 20 20 00
+R 00 00 02 00
