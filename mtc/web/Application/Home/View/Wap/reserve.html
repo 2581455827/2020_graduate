@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>智能停车终端</title>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <link href="/Public/style.css" rel="stylesheet" type="text/css"/>
+    <script src="/Public/jquery.js"></script>
+    <script type="text/javascript">
+        ws = new WebSocket("ws://192.168.43.100:8001");
+        ws.onmessage = function (e) {
+            var arr = JSON.parse(e.data);
+            console.log(arr[0]);
+            if (arr[0] == 1) {
+			   $("#a").attr("disabled", true);
+      
+               } else {
+ $("#a").attr("disabled", false);               
+			}
+        }
+    </script>
+</head>
+<body>
+<section class="aui-flexView">
+    <header class="aui-navBar aui-navBar-fixed">
+        <a href="javascript:;" class="aui-navBar-item">
+            <i class="icon icon-return"></i>
+        </a>
+        <div class="aui-center">
+            <span class="aui-center-title"></span>
+        </div>
+        <a href="javascript:;" class="aui-navBar-item"
+           data-ydui-actionsheet="{target:'#actionSheet',closeElement:'#cancel'}">
+            <i class="icon icon-news"></i>
+        </a>
+    </header>
+    <section class="aui-scrollView">
+        <div class="aui-drive-head">
+            <div class="aui-flex">
+                <div class="aui-drive">
+                    <a href="__APP__/Home/Wap"><img src="/Public/img/user.png" alt=""></a>
+                </div>
+                <div class="aui-flex-box">
+                    <h2>185****2894</h2>
+                    <span>
+						<em>普通会员</em>
+						<em>未认证</em>
+					</span>
+                </div>
+            </div>
+        </div>
+        <div class="aui-drive-box">
+            <div class="aui-drive-list">
+                <div class="aui-flex b-line">
+                    <div class="aui-flex-box">
+                        <h3>功能导航</h3>
+                    </div>
+                </div>
+                <div class="aui-palace aui-palace-one">
+                    <a href="__APP__/Home/Wap/reserve" class="aui-palace-grid">
+                        <div class="aui-palace-grid-icon">
+                            <img src="/Public/img/car-001.png" alt="">
+                        </div>
+                        <div class="aui-palace-grid-text">
+                            <h2>车位预定</h2>
+                        </div>
+                    </a>
+                    <a href="__APP__/Home/Wap/record" class="aui-palace-grid">
+                        <div class="aui-palace-grid-icon">
+                            <img src="/Public/img/car-003.png" alt="">
+                        </div>
+                        <div class="aui-palace-grid-text">
+                            <h2>停车记录</h2>
+                        </div>
+                    </a>
+                    <a href="__APP__/Home/Wap/bill" class="aui-palace-grid">
+                        <div class="aui-palace-grid-icon">
+                            <img src="/Public/img/car-004.png" alt="">
+                        </div>
+                        <div class="aui-palace-grid-text">
+                            <h2>账单记录</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="aui-drive-list">
+                <div class="aui-flex b-line">
+                    <div class="aui-flex-box">
+                        <h3>预定车位</h3>
+                    </div>
+                </div>
+                <div class="aui-palace aui-palace-two">
+                    <form action="__APP__/Home/Wap/addReserve" method="post">
+                        <div class="aui-padding">
+                            <select name="no" id="a" class="aui-select">
+                                <option value="0" selected>选择预约区域</option>
+                                <option value="a1">A区-A1</option>
+                            </select>
+                        </div>
+                        <div class="aui-padding">
+                            <input type="text" name="time"
+                                   style="border: 0; border-bottom: 1px solid #eee;font-size: 18px;padding: 0 15px"><span>小时后</span>
+                        </div>
+                        <div class="aui-padding">
+                            <input type="submit" class="aui-button" value="确认预定">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</section>
+</body>
+
+</html>

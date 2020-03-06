@@ -1,7 +1,0 @@
-我们已经将ZStack-CC2530-2.5.1a移植好了，并将“11.按键无线控制台灯和LED灯 继电器”实验的代码增加到进来，大家可以以此为模板，把其它实验的源文件添加进行进行编译测试。
-
-
-工程路径：\ZStack-CC2530-2.5.1a\Projects\zstack\Samples\SampleApp\CC2530DB\SampleApp.eww
-
-
-官方也提供了很多例子和文档，大家可以看看哦
